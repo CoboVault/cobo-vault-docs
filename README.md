@@ -1,4 +1,4 @@
-# Cobo Vault Secure Element Firmware
+# Cobo Vault Documents
 
 Cobo Vault is an air-gapped, open source hardware wallet that uses completely transparent QR code data transmissions. Visit the [Cobo Vault official website]( https://cobo.com/hardware-wallet/cobo-vault)  to learn more about Cobo Vault.
 
