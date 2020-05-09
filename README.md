@@ -5,6 +5,8 @@ Cobo Vault is an air-gapped, open source hardware wallet that uses completely tr
 ## High Level Architecture
 Cobo Vault is build on self designed and safelly enhancend hardware platform with a secure element, currently it runs on highly safelly enhanced Android Go platform. 
 
+![Cobo Vault Hight Level Architecture](./vault.jpg)
+
 The Secure elememt is an secure component saving user's master seed. the secure element is commnucating with the application based on serial communication protocol. meanwhile user should set password before using Cobo Vault. all the senstive action should be authorized by user password.
 
 since the Cobo Vault is compeletly air gaped, we use qr code to send and receive data. for the detail data protocol please check [here](https://github.com/CoboVault/crypto-coin-message-protocol)
