@@ -1,9 +1,3 @@
----
-title: Cobo Vault Application Update Package Verification
-created: '2020-05-09T02:12:57.767Z'
-modified: '2020-05-09T03:31:42.425Z'
----
-
 
 # Cobo Vault Application Update Package Verification
 
