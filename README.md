@@ -1,17 +1,17 @@
 # Cobo Vault Developer Documents
 
-Cobo Vault is an air-gapped, open source hardware wallet that uses completely transparent QR code data transmissions. Visit the [Cobo Vault official website]( https://cobo.com/hardware-wallet/cobo-vault)  to learn more about Cobo Vault.
+Cobo Vault is an air-gapped, open source hardware wallet that uses completely transparent QR code data transmissions. Visit the Cobo Vault official [website](https://cobo.com/hardware-wallet/cobo-vault) to learn more.
 
 ## High Level Architecture
-Cobo Vault is build on self designed and safelly enhancend hardware platform with a secure element, currently it runs on highly safelly enhanced Android Go platform. 
+Cobo Vault is built on a specialized security hardware platform with a Secure Element that currently runs on a highly secure and enhanced Android Go platform.
 
 ![Cobo Vault Hight Level Architecture](./vault.jpg)
 
-The Secure elememt is an secure component saving user's master seed. the secure element is commnucating with the application based on serial communication protocol. meanwhile user should set password before using Cobo Vault. all the senstive action should be authorized by user password.
+The user’s master seed is saved in the Secure Element. The Secure Element communicates with the hardware wallet application layer through a serial communication protocol. Users need to set a password before using Cobo Vault, which can be used to unlock the device, sign transactions, or do other sensitive operations.
 
-since the Cobo Vault is compeletly air gaped, we use qr code to send and receive data. for the detail data protocol please check [here](https://github.com/CoboVault/crypto-coin-message-protocol)
+We use QR code data transmissions to air-gap the Cobo Vault. For details on the data protocol we use, please check [here](https://github.com/CoboVault/crypto-coin-message-protocol)
 
-since one QR code image can only contain limit size of data, we use animated QR Codes to handle bigger size of data. here is an sample:
+QR codes are limited in the data they can contain, and we use animated QR codes to handle larger transmissions of data. Here is an sample:
 
 ```
 {
@@ -24,21 +24,19 @@ since one QR code image can only contain limit size of data, we use animated QR 
 }
 ```
 
-The Total field is for `total` number of the animated QRCodes and `index` field is for the index number of the QRCodes. `value` field is for the chunck of data. `compress` is the indicator of whether the data is compressed.currently we use gzip + base64 to compressed the data and `checkSum` is the checksum of the whole data.
+The `total` field is for the total number of animated QR codes and the `index` field is for the index number of the QR codes. The `value` field is for the chunk of data. The `compress` field is an indicator of whether the data is compressed (currently we use gzip + base64 to compress data). The `checkSum` field is the checksum of the whole data.
 
 we are working an demo of the animated QRCodes. once finished we will open it on our Github.
 
 
 ## Hardware docs
-[hardware](): check the hardware folders to checkout our hardware documents. currently we open our schematic and BOM files
+[hardware](): check the hardware folders for our hardware documents. Currently our schematic and BOM files are open source.
 
-## Application docs
+<!-- ## Application docs
 [applications](): check our applications folders to see our applications documents
 
-
-
 ## Don't Trust, Verify!
-In blockchain we belevie `Don't Trust Verify`. please checkout our documents how to verify our firmware.
+`Don't Trust Verify`. Check our documentation to learn about how you can verify our firmware. -->
 
 ## License
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-green.svg)](https://opensource.org/licenses/)
