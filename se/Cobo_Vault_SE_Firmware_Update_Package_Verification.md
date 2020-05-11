@@ -11,7 +11,7 @@ Refer the following steps below:
 - [Cobo Value official firmware website](https://cobo.com/hardware-wallet/firmware)
 
 ## Unzip official release update package
-  Use the public key [] to unzip update package.
+  Use the public key defined in [version_def.c](https://github.com/cobo-vault-se-firmware/source/version_def.c) to unzip update package.
   Update package consists of the following parts:
 - `app_[version_code]_[version_name]_[git_commit_id]_[apk_sha1_checksum].apk` : Cobo Vault cold update version package
 - `manifest.json` : Update package digest information
@@ -19,11 +19,10 @@ Refer the following steps below:
 - `signed.rsa` : Signature for update package
 
 ## Download source code
-- Download the code of the branch corresponding to the official upgrade package version from github. For example, the official upgrade package version is `V0.3.6`, and the corresponding code branch is `0.3.6-public-release`.
+Download the code of the branch corresponding to the official upgrade package version from github. For example, the official upgrade package version is `V0.3.6`, and the corresponding code branch is `0.3.6-public-release`.
 Run the following command to download the code:
 `git clone -b [code branch] git@github.com:CoboVault/cobo-vault-se-firmware.git`
 Replace `[code branch]` with a specific branch name
-
 
 ## Build secure element firmware
   Build with ARM IDEs like "RealView MDK V4.x".
@@ -58,11 +57,8 @@ Update Package Body has several 528 bytes blocks. Each block is consist of the f
 More information about "make_update_package.py" , you can execute `make_update_package.py -h`
 
 ## Verify update package
-After compare the update package with the `serial_*.bin` unziped from official release update package,
+After compare the update package with the `serial_*.bin` unzipped from official release update package,
 You will find the "signature" in update Package Header is different.
 
 Beyond that, the other parts should be same.
 It could prove the official release update package was built by GITHUB source code.
-
-
-
