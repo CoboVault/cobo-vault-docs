@@ -7,6 +7,7 @@ As part of working towards this goal, we are open sourcing the hardware design o
 
 ## Schematic
 `Cobo_Vault_V1.02_schematic.pdf`
+
 Notes:
 The self-destruct mechanism has been removed from the schematic as we chose not to disclose all of its functionality.
 In order to minimize the attack surface, we do not share detailed information on the Secure Element. For researchers who are interested in our Secure Element design, you can request we share the development board, datasheet, and other materials under NDA (required by our Secure Element vendor). Contact us at cobovault@cobo.com.
