@@ -7,11 +7,11 @@ Cobo Vault is built on a specialized security hardware platform with a Secure El
 
 ![Cobo Vault Hight Level Architecture](./vault.jpg)
 
-The user’s master seed is saved in the Secure Element. The Secure Element communicates with the hardware wallet application layer through a serial communication protocol. Users need to set a password before using Cobo Vault, which can be used to unlock the device, sign transactions, or do other sensitive operations.
+The user’s master seed is saved in the Secure Element and never leaves it. The Secure Element communicates with the hardware wallet application layer through a serial communication protocol. Users need to set a password before using Cobo Vault, which can be used to unlock the device, sign transactions, or do other sensitive operations.
 
-We use QR code data transmissions to air-gap the Cobo Vault. For details on the data protocol we use, please check [here](https://github.com/CoboVault/crypto-coin-message-protocol)
+We use QR code data transmissions to air-gap. For details on the data protocol we use, please check [here](https://github.com/CoboVault/crypto-coin-message-protocol)
 
-QR codes are limited in the data they can contain, and we use animated QR codes to handle larger transmissions of data. Here is an sample:
+QR codes are limited in how data they can contain, so we use animated QR codes to handle larger transmissions of data. Here is an sample:
 
 ```
 {
