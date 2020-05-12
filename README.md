@@ -30,7 +30,7 @@ we are working an demo of the animated QRCodes. once finished we will open it on
 
 
 ## Hardware docs
-[hardware](): check the hardware folders for our hardware documents. Currently our schematic and BOM files are open source.
+[hardware](https://github.com/CoboVault/cobo-vault-docs/tree/master/hardware): check the hardware folders for our hardware documents. Currently our schematic and BOM files are open source.
 
 <!-- ## Application docs
 [applications](): check our applications folders to see our applications documents
