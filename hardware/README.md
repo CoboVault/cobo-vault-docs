@@ -1,17 +1,16 @@
-
 # Cobo Vault Hardware
-One of product design principles is minimizing trust. A crucial way of minimizing trust is making our product as transparent as possible.
+Our product design philosophy is to minimize trust dependencies. A crucial way of minimizing trust is to make our product as transparent as possible.
 
-To get to that goal, now we open source the hardware design of the Cob Vault Pro/Essential. Researchers can rebuild our product from it for further verification.
+As part of working towards this goal, we are open sourcing the hardware design of Cobo Vault Essential and Pro. We encourage researchers to use it to rebuild our product for further verification.
 
-[View hardware schematic and BOM here.](https://github.com/CoboVault/cobo-vault-docs/tree/master/hardware)
+[View hardware schematic and BOM](https://github.com/CoboVault/cobo-vault-docs/tree/master/hardware)
 
 ## Schematic
 `Cobo_Vault_V1.02_schematic.pdf`
-
 Notes:
-Self-destruct mechanism has been removed for better protection.
-We can’t share detailed information about the Secure Element to minimize attack surface. For those who are interested in our Secure Element, we can share development board/datasheet/other material under an NDA(this is required by our Secure Element vendor)
+The self-destruct mechanism has been removed from the schematic as we chose not to disclose all of its functionality.
+In order to minimize the attack surface, we do not share detailed information on the Secure Element. For researchers who are interested in our Secure Element design, you can request we share the development board, datasheet, and other materials under NDA (required by our Secure Element vendor). Contact us at cobovault@cobo.com.
+
 
 ## BOM
 `Cobo_Vault_V1.02_BOM.xls`
@@ -19,7 +18,7 @@ We can’t share detailed information about the Secure Element to minimize attac
 This list contains all the materials used in the production of Cobo Vault Essential and Pro. 
 
 ## Important Notices
-No promises that these files are 100% current because we do make quality improvements.
-Copyright of these files, and all design elements of the Cobo Vault Pro/Essential remain with Cobo.
-This information is for research and testing purposes only no warranties.
+Cobo retains sole copyright of these files and all design elements of Cobo Vault Essential and Pro. 
+As part of making quality improvements, we will constantly update this schematic and it may not be current.
+The above information is for research and testing purposes only and includes no warranties.
 Cobo does not grant license of this information for commercial use.
