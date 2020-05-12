@@ -37,7 +37,3 @@ we are working an demo of the animated QRCodes. once finished we will open it on
 
 ## Don't Trust, Verify!
 `Don't Trust Verify`. Check our documentation to learn about how you can verify our firmware. -->
-
-## License
-[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-green.svg)](https://opensource.org/licenses/)
-This project is licensed under the GPL License. See the [LICENSE](LICENSE) file for details.
