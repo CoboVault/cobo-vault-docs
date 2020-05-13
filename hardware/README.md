@@ -3,10 +3,10 @@ Our product design philosophy is to minimize trust dependencies. A crucial way o
 
 As part of working towards this goal, we are open sourcing the hardware design of Cobo Vault Essential and Pro. We encourage researchers to use it to rebuild our product for further verification.
 
-[View hardware schematic and BOM](https://github.com/CoboVault/cobo-vault-docs/tree/master/hardware)
+[View hardware schematic and BOM](.)
 
 ## Schematic
-`Cobo_Vault_V1.02_schematic.pdf`
+[`Cobo_Vault_V1.02_schematic.pdf`](Cobo_Vault_V1.02_schematic.pdf)
 
 Notes:  
 The self-destruct mechanism has been removed from the schematic as we chose not to disclose all of its functionality.
@@ -14,7 +14,7 @@ In order to minimize the attack surface, we do not share detailed information on
 
 
 ## BOM
-`Cobo_Vault_V1.02_BOM.xls`
+[`Cobo_Vault_V1.02_BOM.xls`](Cobo_Vault_V1.02_BOM.xls)
 
 This list contains all the materials used in the production of Cobo Vault Essential and Pro. 
 
