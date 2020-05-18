@@ -37,3 +37,5 @@ we are working an demo of the animated QRCodes. once finished we will open it on
 
 ## Don't Trust, Verify!
 `Don't Trust Verify`. Check our [documentation](./application/Cobo_Vault_Application_Update_Package_Verification.md) to learn about how you can verify our firmware.
+
+## new charpter 
