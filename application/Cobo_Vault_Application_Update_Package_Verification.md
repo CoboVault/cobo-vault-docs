@@ -18,7 +18,7 @@ Refer to the below sections for instructions.
 - `signed.rsa` : Signature for upgrade package
 
 ## Download source code
-- Download the code of the branch corresponding to the official upgrade package version from Github. For example, if the official upgrade package version is `V1.1.0`, the corresponding code branch is `1.1.0-public-release`.
+- Download the code of the branch corresponding to the official upgrade package version from Github. For example, if the official upgrade package version is `V1.1.0`, the corresponding code branch is `V1.1.0-release`.
 Run the following command to download the code:
 
 `git clone -b [code branch] git@github.com:CoboVault/cobo-vault-cold.git --recursive`
