@@ -12,7 +12,7 @@ Refer to the below sections for instructions.
 ## Unzip official release update package
   Use [update public key](https://github.com/CoboVault/cobo-vault-cold/blob/master/app/build.gradle#L112) to unzip upgrade package.
   An upgrade package consists of the following parts:
-- `app_[version_code]_[version_name]_[git_commit_id]_[apk_sha1_checksum].apk` : Cobo Vault cold upgrade version package
+- `app_[version_code]_[version_name]_[git_commit_id]_[apk_sha1_checksum].apk` : Cobo Vault hardware wallet upgrade version package
 - `manifest.json` : Upgrade package digest information
 - `serial_*.bin` : Cobo Vault Secure Element upgrade version package
 - `signed.rsa` : Signature for upgrade package
@@ -37,7 +37,7 @@ You can find the APK in:
  `cobo-vault-cold/releases/[version_code]/app_***.apk`
 
 ## Verify APK
-We now have two APK files, one extracted from official upgrade package, another built from open source code.
+We now have two APK files, one extracted from the official upgrade package, another built from open source code.
 
 Because the keystore used to sign the APK cannot be made public, a test keystore is used in the open source code.
 Therefore, the digest of the APK file cannot be directly compared. Instead, we can compare whether the information before signing is consistent.
