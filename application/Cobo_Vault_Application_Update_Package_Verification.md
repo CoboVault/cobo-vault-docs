@@ -1,7 +1,7 @@
 
 # Cobo Vault Application Upgrade Package Verification
 
-## Instruction
+## Introduction
 Cobo Vault offers a method for verifying official release upgrade packages. You can compare a version package you compiled from Github source code with the official release update package to accomplish this.
 
 Refer to the below sections for instructions.
@@ -37,7 +37,7 @@ You can find the APK in:
  `cobo-vault-cold/releases/[version_code]/app_***.apk`
 
 ## Verify APK
-We now have two APK files, one extracted from official upgrade package, another built from open source code.
+We now have two APK files, one extracted from official upgrade package, another built from the open source code.
 
 Because the keystore used to sign the APK cannot be made public, a test keystore is used in the open source code.
 Therefore, the digest of the APK file cannot be directly compared. Instead, we can compare whether the information before signing is consistent.
@@ -45,7 +45,7 @@ Therefore, the digest of the APK file cannot be directly compared. Instead, we c
 Change the suffix of the APK file to .zip, and then unzip the .zip file.
 You can find the `META-INF/CERT.SF` file.
 
-then compare the two `META-INF/CERT.SF` files, If they are the same，you will have verified that the official upgrade package matches the open source code.
+Then compare the two `META-INF/CERT.SF` files. If they are the same，you will have verified that the official upgrade package matches the open source code.
 
 
 
