@@ -9,9 +9,9 @@ Cobo Vault is built on a specialized security hardware platform with a Secure El
 
 The user’s master seed is saved in the Secure Element and never leaves it. The Secure Element communicates with the hardware wallet application layer through a serial communication protocol. Users need to set a password before using Cobo Vault, which can be used to unlock the device, sign transactions, or do other sensitive operations.
 
-We use QR code data transmissions to air-gap. For details on the data protocol we use, please check [here](https://github.com/CoboVault/crypto-coin-message-protocol)
+We use QR code data transmissions to air-gap. For details on the data protocol we use, please check [here](https://github.com/CoboVault/crypto-coin-message-protocol).
 
-QR codes are limited in how data they can contain, so we use animated QR codes to handle larger transmissions of data. Here is an sample:
+QR codes are limited in how much data they can contain, so we use animated QR codes to handle larger transmissions of data. Here is an sample:
 
 ```
 {
@@ -26,14 +26,14 @@ QR codes are limited in how data they can contain, so we use animated QR codes t
 
 The `total` field is for the total number of animated QR codes and the `index` field is for the index number of the QR codes. The `value` field is for the chunk of data. The `compress` field is an indicator of whether the data is compressed (currently we use gzip + base64 to compress data). The `checkSum` field is the checksum of the whole data.
 
-we are working an demo of the animated QRCodes. once finished we will open it on our Github.
+we are working an demo of the animated QR codes which we will later release on this page.
 
 
 ## Hardware docs
-[hardware](https://github.com/CoboVault/cobo-vault-docs/tree/master/hardware): check the hardware folders for our hardware documents. Currently our schematic and BOM files are open source.
+Check the [hardware](https://github.com/CoboVault/cobo-vault-docs/tree/master/hardware) folder for our hardware documents. Currently our schematic and BOM files are open source.
 
 ## Application docs
-[applications](https://github.com/CoboVault/cobo-vault-docs/tree/master/application): check the applications folders to see our applications documents
+Check the [applications](https://github.com/CoboVault/cobo-vault-docs/tree/master/application) folder for our applications documents.
 
 ## Don't Trust, Verify!
 `Don't Trust Verify`. Check our [documentation](./application/Cobo_Vault_Application_Update_Package_Verification.md) to learn about how you can verify our firmware.
