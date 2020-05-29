@@ -39,4 +39,6 @@ we are working an demo of the animated QRCodes. once finished we will open it on
 [se](https://github.com/CoboVault/cobo-vault-docs/tree/master/se): check the `se` folders to see our secure element documents.
 
 ## Don't Trust, Verify!
-`Don't Trust Verify`. Check our [documentation](./application/Cobo_Vault_Application_Update_Package_Verification.md) to learn about how you can verify our firmware.
+`Don't Trust Verify`. Check our documentation to learn about how you can verify our firmware.
+- [Verify Application](./application/Cobo_Vault_Application_Update_Package_Verification.md)
+- [Verify Secure Element](./se/Cobo_Vault_SE_Firmware_Update_Package_Verification.md)
