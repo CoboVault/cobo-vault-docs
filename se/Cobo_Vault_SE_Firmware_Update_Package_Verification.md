@@ -3,7 +3,7 @@
 ## Introduction
 Cobo Vault offers a method for verifying official release upgrade packages. You can compare a version package you compiled from Github source code with the official release update package to accomplish this.
 
-The python script [make_update_package.py](https://github.com/cobo-vault-se-firmware/upgrade/make_update_package.py) is for verifying secure element firmware update package.
+The python script [make_update_package.py](https://github.com/CoboVault/cobo-vault-se-firmware/tree/master/upgrade/make_update_package.py) is for verifying secure element firmware update package.
 
 Refer to the below sections for instructions.
 
@@ -11,15 +11,15 @@ Refer to the below sections for instructions.
 - [Firmware upgrades on the official Cobo Vault website](https://cobo.com/hardware-wallet/firmware)
 
 ## Unzip official release update package
-  Use [update public key](https://github.com/CoboVault/cobo-vault-cold/blob/master/app/build.gradle#L112) to unzip upgrade package.
-  An upgrade package consists of the following parts:
+Use [update public key](https://github.com/CoboVault/cobo-vault-cold/blob/master/app/build.gradle#L112) to unzip upgrade package.
+An upgrade package consists of the following parts:
 - `app_[version_code]_[version_name]_[git_commit_id]_[apk_sha1_checksum].apk` : Cobo Vault cold upgrade version package
 - `manifest.json` : Upgrade package digest information
 - `serial_*.bin` : Cobo Vault Secure Element upgrade version package
 - `signed.rsa` : Signature for upgrade package
 
 ## Download source code
-- Download the code of the branch corresponding to the official upgrade package version from Github. For example, if the official upgrade package version is `V0.3.6`, the corresponding code branch is `V0.3.6-release`.
+Download the code of the branch corresponding to the official upgrade package version from Github. For example, if the official upgrade package version is `V0.3.6`, the corresponding code branch is `V0.3.6-release`.
 Run the following command to download the code:
 
 `git clone -b [code branch] git@github.com:CoboVault/cobo-vault-se-firmware.git`
@@ -36,7 +36,7 @@ Build with ARM IDEs like "Keil MDK V4.x".
 
 ## Make upgrade package
   Use python script `make_update_package.py` in directory `cobo-vault-se-firmware/upgrade/` to make a upgrade package from build hex file.
-  Command is "make_update_package.py -t TARGET_VERSION", "TARGET_VERSION" should be same as official release update package. You can find it in `cobo-vault-se-firmware/source/version_def.h`.
+  Command is `make_update_package.py -t TARGET_VERSION`, `TARGET_VERSION` should be same as official release update package. You can find it in `cobo-vault-se-firmware/source/version_def.h`.
   Such as `Python upgrade/make_update_package.py -t 0.3.6.000000`. `app.0.3.6.000000.bin` is the update package.
 
   `app.0.3.6.000000.bin` is consist of the following parts:
