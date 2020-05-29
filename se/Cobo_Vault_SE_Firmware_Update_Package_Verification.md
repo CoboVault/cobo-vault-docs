@@ -61,7 +61,7 @@ Update Package Body has several 528 bytes blocks. Each block is consist of the f
 2 | block_content  |  block_bin    | 512Bytes | package bin of block (3des encrypt)
 2 | bloc_checksum  |  /            | 8Bytes   | front 8 bytes of block_content(3des encrypt) sha256
 
-More information about "make_update_package.py" , you can execute `make_update_package.py -h`
+More information about `make_update_package.py` , you can execute `make_update_package.py -h`
 
 ## Verify update package
 After compare the update package with the `serial_*.bin` unzipped from official release update package,
