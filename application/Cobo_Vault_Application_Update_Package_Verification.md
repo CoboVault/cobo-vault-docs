@@ -10,7 +10,12 @@ Refer to the below sections for instructions.
 - [Firmware upgrades on the official Cobo Vault website](https://cobo.com/hardware-wallet/firmware)
 
 ## Unzip official release update package
-  Use [update public key](https://github.com/CoboVault/cobo-vault-cold/blob/master/app/build.gradle#L112) to unzip upgrade package.
+  Use the public key defined in the code to unzip upgrade package.
+  
+  [public key for all-coin version](https://github.com/CoboVault/cobo-vault-cold/blob/master/app/build.gradle#L112) 
+  
+  [public key for btc-only version](https://github.com/CoboVault/cobo-vault-cold/blob/btc_only/app/build.gradle#L112) 
+  
   An upgrade package consists of the following parts:
 - `app_[version_code]_[version_name]_[git_commit_id]_[apk_sha1_checksum].apk` : Cobo Vault cold upgrade version package
 - `manifest.json` : Upgrade package digest information
