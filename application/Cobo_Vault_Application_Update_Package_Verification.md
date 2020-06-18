@@ -9,8 +9,17 @@ Refer to the below sections for instructions.
 ## Download official release update package
 - [Firmware upgrades on the official Cobo Vault website](https://cobo.com/hardware-wallet/firmware)
 
+## Verify Checksum
+
+Calculate the sha256 checksum of the package to ensure that it is consistent with the official website 
+```
+shasum -a 256 V1.2.0.zip
+```
+
 ## Unzip official release update package
-  Use the public key defined in the code to unzip upgrade package.
+  1. Unzip the file you just downloaded and get a file called update.zip
+  
+  2. Use the public key defined in the code to unzip upgrade package update.zip
   
   [public key for all-coin version](https://github.com/CoboVault/cobo-vault-cold/blob/master/app/build.gradle#L112) 
   
@@ -21,6 +30,11 @@ Refer to the below sections for instructions.
 - `manifest.json` : Upgrade package digest information
 - `serial_*.bin` : Cobo Vault Secure Element upgrade version package
 - `signed.rsa` : Signature for upgrade package
+  
+3. Verify the Signature
+
+`signed.rsa` is the digital signature of `manifest.json` by SHA1withRSA, you can verify the signature with public key      mentioned above. Refer to the code [verify update.zip signature](https://github.com/CoboVault/cobo-vault-cold/blob/3412f499fba0ad0d804dc134b8d6534fb69c82a8/app/src/main/java/com/cobo/cold/update/Checking.java#L77)
+  
 
 ## Download source code
 - Download the code of the branch corresponding to the official upgrade package version from Github. For example, if the official upgrade package version is `V1.1.0`, the corresponding code branch is `V1.1.0-release`.
