@@ -32,6 +32,10 @@ we are working an demo of the animated QRCodes. once finished we will open it on
 ## Hardware docs
 [hardware](https://github.com/CoboVault/cobo-vault-docs/tree/master/hardware): check the `hardware` folders for our hardware documents. Currently our schematic and BOM files are open source.
 
+## Audit-report docs
+[audit-report](https://github.com/CoboVault/cobo-vault-docs/tree/master/audit-report): check the `audit-report` folders for audit report
+documents
+
 ## Application docs
 [applications](https://github.com/CoboVault/cobo-vault-docs/tree/master/application): check the `application` folders to see our applications documents.
 
