@@ -3,8 +3,13 @@ Cobo Vault is an air-gapped, QR Code based hardware wallet. it would like to be 
 this guide is for developer who would like to intregate their serivces with Cobo Vault.
 
 ## BTC Only Firmware
+we provide BTC-only Firmware for Bitcoiner. you can get the latest firmware from [here](https://cobo.com/hardware-wallet/downloads), For Bitcoin, we follow the BIP174, aka PSBT to encode transaction. for ones who is not familar with BIP174 and PSBT here is some good reference guide.
+
+- guide 1
+- guide 2
 
 ### Single-Sig
+currently we have integrate with a lot of well-knonw wallet, like electrum, BlueWallet, Wasabi Wallet, BTCPay, Spector etc. and also we provide and generic wallet model to other wallet or service who would like to integrate with us. 
 
 #### Setup the watch-only wallet
 
@@ -19,3 +24,6 @@ this guide is for developer who would like to intregate their serivces with Cobo
 #### Sign PSBT
 
 #### export Signed PSBT
+
+
+### FAQ
