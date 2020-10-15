@@ -17,7 +17,7 @@ currently we have integrated with a lot of well-known wallet, like electrum, Blu
 
 #### Sign PSBT
 
-#### exported Signed PSBT
+#### export Signed PSBT
 
 ## Multi-Sig
 
