@@ -8,8 +8,10 @@ we provide BTC-only Firmware for Bitcoiner. you can get the latest firmware from
 - guide 1
 - guide 2
 
+### Animated QR Codes
+
 ### Single-Sig
-currently we have integrate with a lot of well-knonw wallet, like electrum, BlueWallet, Wasabi Wallet, BTCPay, Spector etc. and also we provide and generic wallet model to other wallet or service who would like to integrate with us. 
+currently we have integrated with a lot of well-known wallet, like electrum, BlueWallet, Wasabi Wallet, BTCPay, Spector etc. and also we provide and generic wallet model to other wallets or services who would like to integrate with us. 
 
 #### Setup the watch-only wallet
 
