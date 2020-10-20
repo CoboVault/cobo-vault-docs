@@ -1,21 +1,55 @@
 # Cobo Vault Integration Guide
 Cobo Vault is an air-gapped, QR Code based hardware wallet. it would like to be the pure signer for your crypto transaction, Cobo Vault don't have other connections like BlueTooth, WIFI, etc. the only way it can transmit data is via QR codes.
-this guide is for developer who would like to intregate their serivces with Cobo Vault.
+this guide is for developer who would like to integrate their services with Cobo Vault.
 
+### Animated QR Codes
+In Cobo Vault, we use QR Codes to transmit data, since each qr code image can only contain limit size of data. in order to send big chunk of data, we use animated QR codes to transmit big chunk of data. we are using the bc-ur to encode the data, for bc-ur please refer this [doc](https://github.com/CoboVault/Research/blob/master/papers/bcr-0005-ur.md)
+we have implemented different libraries of bc-ur:
+- javascript version: https://github.com/CoboVault/cobo-vault-blockchain-base/tree/master/packages/sdk
+```
+// here is an sample:
+yarn add @cvbb/sdk
+const { CoboVaultSDK } = require("@cvbb/sdk")
+const sdk = new CoboVaultSDK()
+const data = sdk.encodeDataForQR('12334')
+console.log(data)
+// [ 'ur:bytes/1248938493496dfhjdh34' ]
+```
+each item in the array should be put into the qr code image.
+
+- java version: https://github.com/CoboVault/bc32-java
+
+#### libraries
+##### web
+there are a lot of existing libraries which currently can be used to scan qr codes and here is some of it used by our friends :)
+- [qr-scaner](https://github.com/nimiq/qr-scanner)
+- [vue-qr-code](https://github.com/gruhn/vue-qrcode-reader/) 
+
+##### React Native
+ - [react-native-camera](https://github.com/react-native-camera/react-native-camera)
+ 
+##### Native App
+for IOS and Android App we can use libraries to scan QR Codes.
+ 
+ 
 ## BTC Only Firmware
 we provide BTC-only Firmware for Bitcoiner. you can get the latest firmware from [here](https://cobo.com/hardware-wallet/downloads), For Bitcoin, we follow the BIP174, aka PSBT to encode transaction. for ones who is not familar with BIP174 and PSBT here is some good reference guide.
 
 - guide 1
 - guide 2
 
-### Animated QR Codes
 
 ### Single-Sig
 currently we have integrated with a lot of well-known wallet, like electrum, BlueWallet, Wasabi Wallet, BTCPay, Spector etc. and also we provide and generic wallet model to other wallets or services who would like to integrate with us. 
 
 #### Setup the watch-only wallet
 
-watch-only wallet import the extended public key info from cobo vault, cobo vault support both file and qrcode, the xpub info defines as follow:
+watch-only wallet import the extended public key info from cobo vault, cobo vault support both file and qrcode, the xpub info defines as follow, here is an sample file for this info:
+
+- `ExPubKey`: this is the extended public key of the master seed
+- `MasterFingerprint`: this is the master finger print of master seed which is only used to identify the master seed
+- `AccountKeyPath`: this is the derivation path of the extended public key
+- `CoboVaultFirmwareVersion`: this is the firmware version in current hardware device. 
 
 file: `p2wpkh-pubkey.txt`
 ```
@@ -28,8 +62,7 @@ file: `p2wpkh-pubkey.txt`
 ```
 
 qr code (json string):
-
-<img src="./pics/export_single_sig_expub.png" width="200" height="200" />
+![qrcode]("./pics/export_single_sig_expub.png)
 
 #### Sign PSBT
 
