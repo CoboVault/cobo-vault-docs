@@ -28,6 +28,8 @@ The `total` field is for the total number of animated QR codes and the `index` f
 
 we are working an demo of the animated QRCodes. once finished we will open it on our Github.
 
+## Integration Guide
+[integration](https://github.com/CoboVault/cobo-vault-docs/blob/master/Integration_guide.md) check this file, if you would like to do integration with Cobo Vault.
 
 ## Hardware docs
 [hardware](https://github.com/CoboVault/cobo-vault-docs/tree/master/hardware): check the `hardware` folders for our hardware documents. Currently our schematic and BOM files are open source.
