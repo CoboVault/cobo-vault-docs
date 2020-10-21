@@ -163,7 +163,7 @@ unsigned psbt Qrcode(encoded in bc-ur):
 
 ![unsinged PSBT](./pics/unsigned_multisig_psbt.gif)
 
-#### export Signed PSBT
+#### Export Signed PSBT
 
 signed multisig psbt file:
 
@@ -171,7 +171,7 @@ see the example partially signed multisig psbt file [example](./part_f6a35290_52
 
 signed multisig psbt qrcode(encoded in bc-ur):
 
-![signed psbt]('./pics/signed_multisig_psbt.gif')
+![signed psbt](./pics/signed_multisig_psbt.gif)
 
 ### FAQ
 
