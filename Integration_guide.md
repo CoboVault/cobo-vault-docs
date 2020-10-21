@@ -61,7 +61,8 @@ file: `p2wpkh-pubkey.txt`
 }
 ```
 
-qr code (json string):
+QR Code (json string):
+
 ![qrcode](./pics/export_single_sig_expub.png)
 
 #### Sign PSBT
@@ -107,9 +108,8 @@ user can get the xpub by following this guide: https://btcguide.github.io/setup-
     - "path" is the derivation path of the extended public key
 
    
-   QR Code(json string):
-   
-   ![QR Code](./pics/multisig_xpub_qrcode.png)
+QR Code(json string):
+![QR Code](./pics/multisig_xpub_qrcode.png)
 
 2. Import Multi-sig wallet, Multi-sig wallet data format
 
