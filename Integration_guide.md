@@ -62,7 +62,7 @@ file: `p2wpkh-pubkey.txt`
 ```
 
 qr code (json string):
-![qrcode]("./pics/export_single_sig_expub.png)
+![qrcode](./pics/export_single_sig_expub.png)
 
 #### Sign PSBT
 we use psbt to encode the unsinged transaction and we provide two ways for that:
