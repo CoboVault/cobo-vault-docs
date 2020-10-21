@@ -109,6 +109,7 @@ user can get the xpub by following this guide: https://btcguide.github.io/setup-
 
    
 QR Code(json string):
+
 ![QR Code](./pics/multisig_xpub_qrcode.png)
 
 2. Import Multi-sig wallet, Multi-sig wallet data format
