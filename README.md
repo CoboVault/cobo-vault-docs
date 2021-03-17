@@ -47,3 +47,10 @@ we are working an demo of the animated QRCodes. once finished we will open it on
 `Don't Trust Verify`. Check our documentation to learn about how you can verify our firmware.
 - [Verify Application](./application/Cobo_Vault_Application_Update_Package_Verification.md)
 - [Verify Secure Element](./se/Cobo_Vault_SE_Firmware_Update_Package_Verification.md)
+
+
+## FAQ
+1. How to decode the QRCode and verify the data in the QRCode ？ 
+
+    For multi-coin firmware, we are using the proto-buffer to encode the transaction data or sync data. Really thanks @fnord123 build an great tool to others to decode the QRCodes.
+    For details, please check out this repo: https://github.com/fnord123/CoboSyncVerifier
